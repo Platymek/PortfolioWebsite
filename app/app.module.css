@@ -12,7 +12,6 @@
 
     border-radius: 48px;
     border-color: #7A5AF1;
-    background-color: #E5E0FF;
 }
 
 .header {
@@ -20,9 +19,62 @@
     width: 100%;
     font-weight: bold;
     background-color: #7A5AF1;
-;
+
     padding: 8px;
     padding-bottom: 0px;
     border-top-left-radius: 48px;
     border-top-right-radius: 48px;
+}
+
+.headerText {
+
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.softBg {
+
+    background-color: #E5E0FF;
+}
+
+.navButtonContainer {
+
+    background-color: white;
+    border-radius: 999px;
+
+    padding: 4px;
+    border-width: 4px;
+    border-color: #7A5AF1;
+}
+
+.navButton {
+
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 999px;
+}
+
+.navButtonNotSelected:hover {
+
+    background-color: #E5E0FF;
+}
+
+.navButtonSelected {
+
+    background-color: #5928ED;
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .softBg {
+
+        background-color: #3313B9;
+    }
 }

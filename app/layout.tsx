@@ -4,7 +4,7 @@ import NavBar from "./navbar";
 import { ThemeProvider } from "./theme-provider";
 
 import "./globals.css";
-import styles from "./app.module.css"
+import styles from "./app.module.css";
 
 const roboto = Roboto({ weight: "500", subsets: ["latin"] });
 
@@ -37,32 +37,20 @@ export default function RootLayout({
             disableTransitionOnChange
         >
           <div style={{justifyContent: 'center', display: 'flex'}}>
-            
-            <div className={styles.main}>
 
-              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
+            {/* main box */}
+            <div className={`${styles.main} ${styles.softBg}`}>
 
-                  <div className={styles.header}>
-              
-                    <h1 style={{
-                      
-                      fontSize: 32,
-                      width: '100%',
-                      textAlign: 'center',
-                      color: 'white',
-                    }}>
-              
-                        Hector Selby Reimundez's Portfolio
-                    </h1>
-              
-                  </div>
+              {/* header */}
+              <div className={`${styles.header}`}>
 
-                  <NavBar/>
-
-                  <div style={{padding: 16,}}>
-                      {children}
-                  </div>
+                {/* title */}
+                <h1 className={styles.headerText}>Hector Selby Reimundez's Portfolio</h1>
               </div>
+
+              <NavBar/>
+
+              <div style={{padding: 16,}}>{children}</div>
             </div>
           </div>
         </ThemeProvider>

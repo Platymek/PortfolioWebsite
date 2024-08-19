@@ -1,10 +1,14 @@
 "use client"
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import styles from "./app.module.css";
 
 export default function NavBar() {
 
     const [sticky, setSticky] = useState<boolean>(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         
@@ -17,15 +21,12 @@ export default function NavBar() {
 
     const buttonStyle = (selected: boolean) => {
   
-        return {
-    
-            paddingLeft: 12,
-            paddingRight: 12,
-    
-            color: selected ? 'white' : '#3313B9',
-            backgroundColor: selected ? '#5928ED' : 'white',
-            borderRadius: 999,
+        if (selected) {
+
+            return `${styles.navButton} ${styles.navButtonSelected}`
         }
+
+        else return `${styles.navButton} ${styles.navButtonNotSelected}`;
     }
 
     function getStyle() {
@@ -54,29 +55,40 @@ export default function NavBar() {
     }
   
 
+    const style = {
+            
+        fontSize: 18,
+        justifyContent: 'center',
+        backgroundColor: '#7A5AF1',
+        width: '100%',
+        maxWidth: 800,
+    };
+
     return (
   
         <div style={getStyle()}>
 
-            <div style={{
-                
-                display: 'flex',
-                width: '100%',
-                justifyContent: 'center',
-            }}>
-                <div style={{
+            <div style={{ display: 'flex', width: '100%', justifyContent: 'center',}}>
 
-                    backgroundColor: 'white',
-                    borderRadius: 999,
+                <div className={styles.navButtonContainer}>
+                    
+                    <Link href={'/'} className={buttonStyle(pathname == '/')}>
 
-                    padding: 4,
-                    borderWidth: 4,
-                    borderColor: '#7A5AF1',
-                }}>
-                    <button style={buttonStyle(true)}>About</button>
-                    <button style={buttonStyle(false)}>Games</button>
-                    <button style={buttonStyle(false)}>Software</button>
-                    <button style={buttonStyle(false)}>Art</button>
+                        About
+                    </Link>
+
+                    <Link href={'/Games'} className={buttonStyle(pathname == '/Games')}>
+
+                        Games
+                    </Link>
+                    <Link href={'/Software'} className={buttonStyle(pathname == '/Software')}>
+
+                        Software
+                    </Link>
+                    <Link href={'/Art'} className={buttonStyle(pathname == '/Art')}>
+
+                        Art
+                    </Link>
                 </div>
             </div>
         </div>
