@@ -1,9 +1,8 @@
 
-@import 'colors.css';
+@import '../colors.css';
 
 .main {
 
-    margin: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 48px;
@@ -43,33 +42,4 @@
 .softBg {
 
     background-color: var(--soft-color);
-}
-
-.navButtonContainer {
-
-    background-color: white;
-    border-radius: 999px;
-
-    padding: 4px;
-    border-width: 4px;
-    border-color: #7A5AF1;
-}
-
-.navButton {
-
-    padding: 4px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 999px;
-}
-
-.navButtonNotSelected:hover {
-
-    background-color: #E5E0FF;
-}
-
-.navButtonSelected {
-
-    background-color: #5928ED;
-    color: white;
 }

@@ -8,6 +8,13 @@
         initial-value: #3313B9;
     }
     
+    @property --interact-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #5928ED;
+    }
+    
     @property --primary-color {
     
         syntax: "<color>";
@@ -15,18 +22,18 @@
         initial-value: #7A5AF1;
     }
     
-    @property --absolute-color {
-    
-        syntax: "<color>";
-        inherits: false;
-        initial-value: white;
-    }
-    
     @property --soft-color {
     
         syntax: "<color>";
         inherits: false;
         initial-value: #E5E0FF;
+    }
+    
+    @property --absolute-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: white;
     }
 }
 
@@ -40,6 +47,13 @@
         initial-value: #E5E0FF;
     }
     
+    @property --interact-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #5928ED;
+    }
+    
     @property --primary-color {
     
         syntax: "<color>";
@@ -47,17 +61,17 @@
         initial-value: #7A5AF1;
     }
     
-    @property --absolute-color {
-    
-        syntax: "<color>";
-        inherits: false;
-        initial-value: black;
-    }
-    
     @property --soft-color {
     
         syntax: "<color>";
         inherits: false;
         initial-value: #1C1C4F;
+    }
+    
+    @property --absolute-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: black;
     }
 }

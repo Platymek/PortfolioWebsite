@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import styles from "./app.module.css";
+import styles from "./navbar.module.css";
 
 export default function NavBar() {
 

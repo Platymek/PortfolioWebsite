@@ -1,0 +1,32 @@
+
+@import '../../colors.css';
+
+.navButtonContainer {
+
+    background-color: var(--absolute-color);
+    border-radius: 999px;
+
+    padding: 4px;
+    border-width: 4px;
+    border-color: var(--primary-color);
+}
+
+.navButton {
+
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 999px;
+    text-decoration-line: none;
+}
+
+.navButtonNotSelected:hover {
+
+    background-color: var(--soft-color);
+}
+
+.navButtonSelected {
+
+    background-color: var(--interact-color);
+    color: var(--absolute-color);
+}

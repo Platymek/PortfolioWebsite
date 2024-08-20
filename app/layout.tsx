@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import NavBar from "./navbar";
+import NavBar from "../components/navbar/navbar";
 import { ThemeProvider } from "./theme-provider";
 
 import "./globals.css";
@@ -50,7 +50,7 @@ export default function RootLayout({
 
               <NavBar/>
 
-              <div style={{padding: 32, paddingTop: 0,}}>{children}</div>
+              <div style={{padding: 16, paddingTop: 16,}}>{children}</div>
             </div>
           </div>
         </ThemeProvider>
