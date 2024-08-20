@@ -28,5 +28,5 @@
 .navButtonSelected {
 
     background-color: var(--interact-color);
-    color: var(--absolute-color);
+    color: var(--white);
 }

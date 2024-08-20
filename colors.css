@@ -1,4 +1,11 @@
 
+@property --white {
+    
+    syntax: "<color>";
+    inherits: false;
+    initial-value: white;
+}
+
 @media (prefers-color-scheme: light) {
 
     @property --text-color {
