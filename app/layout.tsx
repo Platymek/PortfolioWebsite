@@ -45,12 +45,12 @@ export default function RootLayout({
               <div className={`${styles.header}`}>
 
                 {/* title */}
-                <h1 className={styles.headerText}>Hector Selby Reimundez's Portfolio</h1>
+                <div className={styles.headerText}>Hector Selby Reimundez's Portfolio</div>
               </div>
 
               <NavBar/>
 
-              <div style={{padding: 16,}}>{children}</div>
+              <div style={{padding: 32, paddingTop: 0,}}>{children}</div>
             </div>
           </div>
         </ThemeProvider>

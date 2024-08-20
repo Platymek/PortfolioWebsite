@@ -1,0 +1,63 @@
+
+@media (prefers-color-scheme: light) {
+
+    @property --text-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #3313B9;
+    }
+    
+    @property --primary-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #7A5AF1;
+    }
+    
+    @property --absolute-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: white;
+    }
+    
+    @property --soft-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #E5E0FF;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    @property --text-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #E5E0FF;
+    }
+    
+    @property --primary-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #7A5AF1;
+    }
+    
+    @property --absolute-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: black;
+    }
+    
+    @property --soft-color {
+    
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #1C1C4F;
+    }
+}
