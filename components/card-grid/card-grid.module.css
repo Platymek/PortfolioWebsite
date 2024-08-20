@@ -1,6 +1,101 @@
 
+@import '../../colors.css';
+
+
+/* Card Grid */
+
 .cardGrid {
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    margin-top: 16px;
+}
+
+
+/* Cards */
+
+
+@keyframes card-hover {
+
+    from {
+
+        background-color: var(--absolute-color);
+        color: var(--text-color)
+    }
+
+    to {
+
+        background-color: var(--primary-color);
+        color: var(--absolute-color)
+    }
+}
+
+
+@property --border-radius {
+    
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 16px;
+}
+
+.card {
+
+    max-width: 360px;
+    
+    background-color: var(--absolute-color);
+
+    border-radius: var(--border-radius);
+
     margin: 8px;
+}
+
+.cardInner {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    border-radius: var(--border-radius);
+}
+
+.card :hover {
+    
+    animation-name: card-hover;
+    animation-duration: 0.25s;
+
+    background-color: var(--primary-color);
+}
+
+.cardTitle {
+    
+    font-size: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    pointer-events: none;
+
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.cardInfo {
+
+    display: flex;
+    flex-direction: row;
+    
+    pointer-events: none;
+
+    font-size: 18px;
+    padding: 4px;
+}
+
+.cardText {
+
+    padding: 4px;
+    padding-left: 8px;
+    color: var(--text-color);
+    font-weight: normal;
 }
