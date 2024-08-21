@@ -35,9 +35,11 @@ export default function NavBar() {
             
             fontSize: 18,
             justifyContent: 'center',
+            alignContent: 'center',
             backgroundColor: '#7A5AF1',
             width: '100%',
             maxWidth: 800,
+            height: 48,
         };
   
         const stickyStyle = {
@@ -65,30 +67,32 @@ export default function NavBar() {
     };
 
     return (
-  
-        <div style={getStyle()}>
+        <div>
+            <div style={{ position: sticky ? 'initial' : 'fixed', height: 48 }} />
+            <div style={getStyle()}>
 
-            <div style={{ display: 'flex', width: '100%', justifyContent: 'center',}}>
+                <div style={{ display: 'flex', width: '100%', justifyContent: 'center',}}>
 
-                <div className={styles.navButtonContainer}>
-                    
-                    <Link href={'/'} className={buttonStyle(pathname == '/')}>
+                    <div className={styles.navButtonContainer}>
+                        
+                        <Link href={'/'} className={buttonStyle(pathname == '/')}>
 
-                        About
-                    </Link>
+                            About
+                        </Link>
 
-                    <Link href={'/Games'} className={buttonStyle(pathname == '/Games')}>
+                        <Link href={'/Games'} className={buttonStyle(pathname == '/Games')}>
 
-                        Games
-                    </Link>
-                    <Link href={'/Software'} className={buttonStyle(pathname == '/Software')}>
+                            Games
+                        </Link>
+                        <Link href={'/Software'} className={buttonStyle(pathname == '/Software')}>
 
-                        Software
-                    </Link>
-                    <Link href={'/Art'} className={buttonStyle(pathname == '/Art')}>
+                            Software
+                        </Link>
+                        <Link href={'/Art'} className={buttonStyle(pathname == '/Art')}>
 
-                        Art
-                    </Link>
+                            Art
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

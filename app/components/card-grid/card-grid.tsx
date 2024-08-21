@@ -1,5 +1,5 @@
 
-import Card from "./card/card";
+import Card from "./card";
 import styles from './card-grid.module.css'
 
 export default function CardGrid() {
