@@ -20,9 +20,10 @@ export default function Card() {
 
                     <Image
 
-                        src='../../../public/next.svg' 
+                        src='../../../public/next.svg'
                         width={100}
                         height={100}
+                        alt='Something effing Random'
                     />
 
                     <div className={styles.cardText}>
