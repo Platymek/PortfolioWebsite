@@ -90,28 +90,28 @@
     pointer-events: none;
 
     font-size: 18px;
-    margin: 8px;
+    padding: 16px;
 }
 
 .cardText {
 
     margin-left: 16px;
-    margin-top: 8px;
     color: var(--text-color);
     font-weight: bold;
-    max-width: 250px;
+    max-width: 210px;
+    padding-top: 8px;
 }
 
 .cardRoles {
 
     margin-left: 16px;
-    margin-top: 8px;
     color: var(--text-color);
     font-weight: normal;
+    padding-top: 8px;
+    width: 210px;
 }
 
 .cardImage {
 
     border-radius: 8px;
-    margin-top: 8px;
 }

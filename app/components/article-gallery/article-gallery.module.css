@@ -1,0 +1,10 @@
+
+@import '/app/colors.css';
+
+.container {
+
+    width: 160px;
+    height: 160px;
+
+    background-color: var(--absolute-color);
+}

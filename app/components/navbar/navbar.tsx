@@ -36,10 +36,11 @@ export default function NavBar() {
             fontSize: 18,
             justifyContent: 'center',
             alignContent: 'center',
-            backgroundColor: '#7A5AF1',
+            //backgroundColor: '#7A5AF1',
             width: '100%',
             maxWidth: 800,
             height: 48,
+            marginTop: -48,
         };
   
         const stickyStyle = {
@@ -47,6 +48,7 @@ export default function NavBar() {
             position: 'fixed',
             top: 0,
             alignSelf: 'center',
+            marginTop: 16,
         }
         
         if (sticky)
@@ -68,7 +70,8 @@ export default function NavBar() {
 
     return (
         <div>
-            <div style={{ position: sticky ? 'initial' : 'fixed', height: 48 }} />
+            <div style={{ /*position: sticky ? 'initial' : 'fixed',*/ height: 48, backgroundColor: '#7A5AF1', boxShadow: '' }} />
+
             <div style={getStyle()}>
 
                 <div style={{ display: 'flex', width: '100%', justifyContent: 'center',}}>
@@ -84,6 +87,8 @@ export default function NavBar() {
 
                             Games
                         </Link>
+                        {
+/*
                         <Link href={'/Software'} className={buttonStyle(pathname == '/Software')}>
 
                             Software
@@ -92,6 +97,8 @@ export default function NavBar() {
 
                             Art
                         </Link>
+*/
+                        }
                     </div>
                 </div>
             </div>
