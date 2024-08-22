@@ -1,7 +1,22 @@
 
+.container {
+
+}
+
 .contentContainer {
 
-    display: 'flex';
-
+    display: flex;
     flex-direction: row;
+}
+
+.galleryContainer {
+
+    max-width: 40%;
+}
+
+.textContainer {
+
+    padding-top: 64px;
+    padding-right: 16px;
+    text-wrap: pretty;
 }

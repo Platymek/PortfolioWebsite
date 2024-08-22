@@ -4,9 +4,9 @@ import styles from './card-grid.module.css'
 import Image from 'next/image'
 import { ScriptProps } from 'next/script'
 
-export default function Card(props: ScriptProps) {
+export default function Card(props) {
 
-    function getRoles(roles: Array) {
+    function getRoles(roles) {
 
         var newRolesArray = []
         
@@ -27,7 +27,7 @@ export default function Card(props: ScriptProps) {
         
         <div style={{ display: 'flex', justifyContent: 'center' }}>
 
-            <Link href={`/Games/${props.page}`} className={styles.card} style={{ textDecoration: 'none' }}>
+            <Link href={`/Articles/${props.page}`} className={styles.card} style={{ textDecoration: 'none' }}>
 
                 <div className={styles.cardInner}>
                     

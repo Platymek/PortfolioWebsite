@@ -1,10 +1,20 @@
 
-@import '/app/colors.css';
+@import '../../colors.css';
 
 .container {
 
-    width: 160px;
-    height: 160px;
+}
 
-    background-color: var(--absolute-color);
+.galleryImage {
+
+    margin-bottom: 16px;
+
+    border-radius: 16px;
+    border-width: 4px;
+    border-color: var(--primary-color);
+}
+
+.youTubeEmbed {
+
+    margin-bottom: 16px;
 }

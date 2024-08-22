@@ -43,11 +43,30 @@ h1 {
   padding-left: 16px;
   
   border-radius: 999px;
+
+  /*
   text-decoration-line: underline;
   text-decoration-thickness: 4px;
+  */
 }
 
 h2 {
+
+  color: var(--primary-color);
+  background-color: var(--absolute-color);
+  font-size: 24px;
+  
+  font-weight: bold;
+  text-align: center;
+
+  margin: 8px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  
+  border-radius: 999px;
+}
+
+h3 {
 
   color: var(--primary-color);
   font-size: 24px;
@@ -79,6 +98,25 @@ p {
 
 ul {
   
+  padding-left: 32px;
+}
+
+ol {
+  
+  padding-left: 32px;
+}
+
+ul li {
+  
+  display: list-item;
+  list-style:disc;
+  font-size: 18px;
+}
+
+ol li {
+  
+  display: list-item;
+  list-style: decimal;
   font-size: 18px;
 }
 
