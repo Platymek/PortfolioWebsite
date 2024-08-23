@@ -38,13 +38,13 @@ export default function ArticleLayout(props) {
 
                 <div className={`${styles.galleryContainer} hidden md:block`}>
 
-                    <ArticleGallery videoid='Pzm71ju0Mn4' srcs={props.gallerySrcs} />
+                    <ArticleGallery videoid={props.videoid} srcs={props.gallerySrcs} />
                 </div>
             </div>
 
             <div className={`md:hidden`} style={{ marginTop: 16 }}>
                     
-                <ArticleGallery videoid='Pzm71ju0Mn4' srcs={props.gallerySrcs} />
+                <ArticleGallery videoid={props.videoid} srcs={props.gallerySrcs} />
             </div>
         </div>
     )
