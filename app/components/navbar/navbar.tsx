@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { CSSProperties, useEffect, useState } from "react";
 import styles from "./navbar.module.css";
 
 export default function NavBar() {
@@ -28,51 +28,21 @@ export default function NavBar() {
 
         else return `${styles.navButton} ${styles.navButtonNotSelected}`;
     }
-
-    function getStyle() {
-
-        const style = {
-            
-            fontSize: 18,
-            justifyContent: 'center',
-            alignContent: 'center',
-            //backgroundColor: '#7A5AF1',
-            width: '100%',
-            maxWidth: 800,
-            height: 48,
-            marginTop: -48,
-        };
   
-        const stickyStyle = {
-      
-            position: 'fixed',
-            top: 0,
-            alignSelf: 'center',
-            marginTop: 16,
-        }
-        
-        if (sticky)
-
-            return Object.assign(style, stickyStyle)
-        else
-            return style;
+    const stickyStyle: CSSProperties = {
+  
+        position: 'fixed',
+        top: 0,
+        alignSelf: 'center',
+        marginTop: 16,
     }
-  
-
-    const style = {
-            
-        fontSize: 18,
-        justifyContent: 'center',
-        backgroundColor: '#7A5AF1',
-        width: '100%',
-        maxWidth: 800,
-    };
 
     return (
         <div>
-            <div style={{ /*position: sticky ? 'initial' : 'fixed',*/ height: 48, backgroundColor: '#7A5AF1', boxShadow: '' }} />
+            <div className={styles.navBlock} />
 
-            <div style={getStyle()}>
+            <div className={styles.navStyle} 
+                style={ sticky ? stickyStyle : {} }>
 
                 <div style={{ display: 'flex', width: '100%', justifyContent: 'center',}}>
 

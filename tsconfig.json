@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/Games/page.mdx", "app/Articles/RobotsHateRain/page.mdx", "app/components/card-grid/card.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/Games/page.mdx", "app/Articles/RobotsHateRain/page.mdx", "app/components/card-grid/card.jsx", "app/components/navbar/navbar.tsx"],
   "exclude": ["node_modules"]
 }

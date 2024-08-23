@@ -58,21 +58,21 @@
     
         syntax: "<color>";
         inherits: false;
-        initial-value: #5928ED;
+        initial-value: #7A5AF1;
     }
     
     @property --primary-color {
     
         syntax: "<color>";
         inherits: false;
-        initial-value: #7A5AF1;
+        initial-value: #B4A1F7;
     }
     
     @property --soft-color {
     
         syntax: "<color>";
         inherits: false;
-        initial-value: #1C1C4F;
+        initial-value: #18114F;
     }
     
     @property --absolute-color {
