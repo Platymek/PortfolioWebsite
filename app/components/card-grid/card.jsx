@@ -10,13 +10,13 @@ export default function Card(props) {
 
         if (roles != undefined) {
 
-            var newRolesArray = [<div>My Roles:</div>]
+            var newRolesArray = [<div key={'role-title'}>My Roles:</div>]
         
             for (var i = 0; i < roles.length; i++) {
     
                 newRolesArray.push(
     
-                    <div key={$`card-${i}`}>
+                    <div key={$`role-${i}`}>
                         {`- ${roles[i]}`}
                     </div>
                 );
