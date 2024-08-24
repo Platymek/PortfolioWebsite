@@ -8,19 +8,22 @@ export default function Card(props) {
 
     function getRoles(roles) {
 
-        var newRolesArray = []
+        if (roles != undefined) {
+
+            var newRolesArray = [<div>My Roles:</div>]
         
-        for (var i = 0; i < roles.length; i++) {
-
-            newRolesArray.push(
-
-                <div>
-                    {`- ${roles[i]}`}
-                </div>
-            );
+            for (var i = 0; i < roles.length; i++) {
+    
+                newRolesArray.push(
+    
+                    <div>
+                        {`- ${roles[i]}`}
+                    </div>
+                );
+            }
+    
+            return newRolesArray;
         }
-
-        return newRolesArray;
     }
 
     return (
@@ -33,7 +36,7 @@ export default function Card(props) {
                     
                     <div className={styles.cardTitle}>
 
-                        Robots Hate Rain
+                        {props.title}
                     </div>
 
                     <div className={styles.cardInfo}>
@@ -41,8 +44,8 @@ export default function Card(props) {
                         <Image
 
                             src={props.src}
-                            width={210}
-                            height={167}
+                            width={218}
+                            height={1000}
                             alt={props.alt}
                             className={`${styles.cardImage}`}
                         />
@@ -51,10 +54,8 @@ export default function Card(props) {
 
                             {props.text}
                         </div>
-                
                         <div className={`${styles.cardRoles} hidden md:block`}>
 
-                            My Roles: <br/>
                             {getRoles(props.roles)}
                         </div>
                     </div>
@@ -63,3 +64,13 @@ export default function Card(props) {
         </div>
     )
 }
+
+/*
+
+                
+                        <div className={`${styles.cardRoles} hidden md:block`}>
+
+                            My Roles: <br/>
+                            {getRoles(props.roles)}
+                        </div>
+*/

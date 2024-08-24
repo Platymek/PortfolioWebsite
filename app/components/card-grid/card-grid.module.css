@@ -68,8 +68,8 @@
 .cardTitle {
     
     font-size: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     pointer-events: none;
 
     border-top-left-radius: var(--border-radius);
@@ -82,7 +82,7 @@
 .cardInfo {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
     justify-content: center;
@@ -90,28 +90,28 @@
     pointer-events: none;
 
     font-size: 18px;
-    padding: 8px;
+    /*padding: 8px;*/
 }
 
 .cardText {
 
-    margin-left: 16px;
+    margin: 8px;
     color: var(--text-color);
     font-weight: bold;
-    max-width: 210px;
-    padding-top: 8px;
+    max-width: 184px;
+    align-self: center;
 }
 
 .cardRoles {
 
-    margin-left: 16px;
+    /*margin-left: 16px;*/
     color: var(--text-color);
     font-weight: normal;
     padding-top: 8px;
-    width: 210px;
+    max-width: 184px;
 }
 
 .cardImage {
 
-    border-radius: 8px;
+    align-self: center;
 }
