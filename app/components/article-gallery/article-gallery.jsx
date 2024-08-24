@@ -18,6 +18,7 @@ export default function ArticleGallery(props) {
                 height={167}
                 alt={'Gameplay Image'}
                 className={`${styles.galleryImage}`}
+                key={$`image-${i}`}
             />)
         }
 

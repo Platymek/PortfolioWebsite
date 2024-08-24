@@ -16,7 +16,7 @@ export default function Card(props) {
     
                 newRolesArray.push(
     
-                    <div>
+                    <div key={$`card-${i}`}>
                         {`- ${roles[i]}`}
                     </div>
                 );

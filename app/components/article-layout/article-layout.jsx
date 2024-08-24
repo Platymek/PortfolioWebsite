@@ -12,7 +12,7 @@ export default function ArticleLayout(props) {
 
             linkComponents.push(
 
-                <a href={links[i]}>
+                <a href={links[i]} key={$`link-${i}`}>
 
                     {linkNames[i]}
                 </a>
