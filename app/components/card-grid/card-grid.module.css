@@ -47,6 +47,9 @@
     border-radius: var(--border-radius);
 
     margin: 8px;
+    
+    max-width: 360px;
+    min-height: 200px;
 }
 
 .cardInner {
@@ -55,6 +58,7 @@
     flex-direction: column;
     border-radius: var(--border-radius);
     background-color: var(--absolute-color);
+    height: 100%;
 }
 
 .card :hover {
@@ -82,14 +86,14 @@
 .cardInfo {
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
 
     justify-content: center;
     
     pointer-events: none;
 
     font-size: 18px;
+    font-weight: normal;
     /*padding: 8px;*/
 }
 
@@ -97,9 +101,7 @@
 
     margin: 8px;
     color: var(--text-color);
-    font-weight: bold;
-    max-width: 184px;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .cardRoles {
@@ -108,10 +110,11 @@
     color: var(--text-color);
     font-weight: normal;
     padding-top: 8px;
-    max-width: 184px;
 }
 
 .cardImage {
 
-    align-self: center;
+    align-self: flex-start;
+    border-radius: 8px;
+    margin: 8px;
 }

@@ -29,8 +29,8 @@ export default function Card(props) {
     return (
         
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-
-            <Link href={`/Articles/${props.page}`} className={styles.card} style={{ textDecoration: 'none' }}>
+            
+            <Link href={`/Articles/${props.page}`} className={`${styles.card}`} style={{ textDecoration: 'none' }}>
 
                 <div className={styles.cardInner}>
                     
@@ -44,7 +44,7 @@ export default function Card(props) {
                         <Image
 
                             src={props.src}
-                            width={218}
+                            width={160}
                             height={1000}
                             alt={props.alt}
                             className={`${styles.cardImage}`}
@@ -61,6 +61,74 @@ export default function Card(props) {
                     </div>
                 </div>
             </Link>
+            
+            {/* Mobile Cards 
+            <Link href={`/Articles/${props.page}`} className={`md:hidden ${styles.card}`} style={{ textDecoration: 'none', maxWidth: 160 }}>
+
+                <div className={styles.cardInner}>
+                    
+                    <div className={styles.cardTitle}>
+
+                        {props.title}
+                    </div>
+
+                    <div className={styles.cardInfo}>
+
+                        <Image
+
+                            src={props.src}
+                            width={180}
+                            height={1000}
+                            alt={props.alt}
+                            className={`${styles.cardImage}`}
+                        />
+
+                        <div className={styles.cardText}>
+
+                            {props.text}
+                        </div>
+                        <div className={`${styles.cardRoles} hidden md:block`}>
+
+                            {getRoles(props.roles)}
+                        </div>
+                    </div>
+                </div>
+            </Link>
+            */}
+
+            {/* Desktop Cards 
+            <Link href={`/Articles/${props.page}`} className={`hidden md:block ${styles.card}`} style={{ textDecoration: 'none' }}>
+
+                <div className={styles.cardInner}>
+                    
+                    <div className={styles.cardTitle}>
+
+                        {props.title}
+                    </div>
+
+                    <div className={styles.cardInfo}>
+
+                        <Image
+
+                            src={props.src}
+                            width={180}
+                            height={1000}
+                            alt={props.alt}
+                            className={`${styles.cardImage}`}
+                        />
+
+                        <div className={styles.cardText}>
+
+                            {props.text}
+                        </div>
+                        <div className={`${styles.cardRoles} hidden md:block`}>
+
+                            {getRoles(props.roles)}
+                        </div>
+                    </div>
+                </div>
+            </Link>
+            */}
         </div>
     )
 }
