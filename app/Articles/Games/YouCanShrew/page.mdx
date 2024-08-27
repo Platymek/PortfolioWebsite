@@ -1,0 +1,120 @@
+
+import ArticleGallery from "../../../components/article-gallery/article-gallery";
+import ArticleLayout from "../../../components/article-layout/article-layout";
+
+<ArticleLayout 
+
+    title='You Can Shrew!'
+
+    gallerySrcs={[
+
+        'https://img.itch.zone/aW1hZ2UvMjAwNjAwMi8xMTc5MzE1Mi5wbmc=/original/uSwY9W.png',
+        'https://img.itch.zone/aW1hZ2UvMjAwNjAwMi8xMTc5MzE3NS5wbmc=/original/VDY9qf.png',
+        'https://img.itch.zone/aW1hZ2UvMjAwNjAwMi8xMTc5MzE3Ni5wbmc=/original/wFy7wJ.png',
+    ]}
+
+    videoid='ywFzG3NZfJY'
+
+    links={[ 'https://play-mek.itch.io/you-can-shrew' ]}
+    linkNames={[ 'Itch.io (Windows, Linux)' ]}
+>
+    **"Help Water Shrew reach the bottom of the ocean to retrieve an unknown relic in 28 days - when
+    Winter starts. Skill won't be enough. Build your courage, believe in yourself, and you can reach your
+    goals!."**
+
+    &nbsp;  
+
+    I made the game to break my 3 year block.
+    However, I still had many projects going which I gave up on between this and my last game.
+
+    &nbsp;  
+    
+    The game was made to be a casual, one handed mobile game but still offer a challenge, as this was
+    the type of game I was looking for at the time.
+    I also wanted to test out an idea I hade for a *rogue-like* where the game takes place over multiple
+    days with a time limit, as I am a very big fan of [Pikmin 1](https://pikmin.nintendo.com).
+
+
+    ## First Gameplay Loop Overview
+
+    The way I went about achieving my goal was by coming up with a very simple gameplay loop like one of
+    those others you would find in mobile games.
+    In this case, the player must simply get as far as they can by eating shrimp, giving themselves
+    energy to swim further down.
+    The player also has a oxygen bar which is constantly draining which can only be replenished by eating
+    yellow shrimp.
+
+    &nbsp;  
+
+    Along the way are two main enemies:
+    - **Fish:** spawn halfway between a shrimp and the furthest screen edge.
+    - **Urchin:** spawn halfway between a shrimp and the next one.
+    
+    &nbsp;  
+
+    The way these enemies work is effective as it constantly forces the player to make decisions
+    about how they are going to tackle the next set of shrimp.
+    
+    &nbsp;  
+
+    **Trick system:** the game also has a trick system where the player can do a trick by quickly
+    dragging away from a shrimp after eating it. The more tricks the player does, the higher the
+    number of **DNA coins** the player gets upon collection.
+    
+    &nbsp;  
+
+    **DNA coins and shop:** the player can spend their DNA coins on one of three upgrades:
+    **health, lives and stamina**.
+    They can access the shop simply by letting go of the screen.
+    However, this removes their entire trick combo.
+
+    ## Second Loop: The Long Game
+
+    As previously mentioned, the game takes place over 28 in game days and the player loses if they reach
+    the final day.
+    From the shop menu, the player may also exit the current run.
+    The total amount of DNA they collected throught the current run is then multipled by a value which
+    increases with distance.
+    This keeps the player constantly wondering if they should risk continuing or stop while they are ahead
+    and cash in their DNA, as this total can be spent on permanent health, lives and stamina upgrades.
+    
+    ## A Failed Experiment
+
+    I would consider the game an overral failure.
+    The main reason is that the game is 
+    **too hard, too much choice is put on the player and it is not interesting enough**.
+    
+    &nbsp;  
+
+    **Too hard:** the game is simply too hard as stamina drains extremely quickly.
+    The player is forced to make very slow progress, which can cause manny fustrating runs as the player
+    practically loses everything.
+    
+    &nbsp;  
+
+    **Too much choice:** as a player, choosing when exactly to quit is too much.
+    Also, stamina will always be the best upgrade, whereas lives and health are simply wastes of coins.
+    If I made the game again, I would likely simply have coins go towards a level up system which occurs
+    automatically. To keep the player focused on the moment.
+
+    &nbsp;  
+
+    **Not interesting enough:** unfortunately, the game is also lacking any interesting qualities, such
+    as graphics or new areas and enemies.
+    However, the present enemies **I am very fond of as they contantly create difficult scenarios which
+    the player must overcome**.
+
+    &nbsp;  
+
+    **Overall, if I tried again**, I'd focus on this element of the game where the player must make
+    moment to moment decisions about taking risks.
+    I would also likely come up with a better way of making the trick system which makes it easier
+    and more approachable.
+    I would likely have the player traverse new areas with unique obstacles, offering new risks.
+
+    &nbsp;  
+
+    I would likely keep the limited time system, as it still has a lot of potential.
+    However, it should really be the only long term pressure the player should have to think about.
+
+</ArticleLayout>
