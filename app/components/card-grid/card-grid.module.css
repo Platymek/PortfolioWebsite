@@ -22,13 +22,25 @@
     from {
 
         background-color: var(--absolute-color);
-        color: var(--text-color)
+        color: var(--text-color);
+
+        margin-left: -0px;
+        padding-left: 0px;
+
+        margin-right: -0px;
+        padding-right: 0px;
     }
 
     to {
 
         background-color: var(--primary-color);
-        color: var(--absolute-color)
+        color: var(--absolute-color);
+
+        margin-left: -8px;
+        padding-left: 8px;
+    
+        margin-right: -8px;
+        padding-right: 8px;
     }
 }
 
@@ -50,6 +62,22 @@
     
     max-width: 360px;
     min-height: 200px;
+    color: var(--text-color)
+}
+
+.card :hover {
+    
+    animation-name: card-hover;
+    animation-duration: 0.25s;
+
+    background-color: var(--primary-color);
+    color: var(--absolute-color);
+
+    margin-left: -8px;
+    padding-left: 8px;
+
+    margin-right: -8px;
+    padding-right: 8px;
 }
 
 .cardInner {
@@ -59,14 +87,6 @@
     border-radius: var(--border-radius);
     background-color: var(--absolute-color);
     height: 100%;
-}
-
-.card :hover {
-    
-    animation-name: card-hover;
-    animation-duration: 0.25s;
-
-    background-color: var(--primary-color);
 }
 
 .cardTitle {
@@ -100,14 +120,12 @@
 .cardText {
 
     margin: 8px;
-    color: var(--text-color);
     align-self: flex-start;
 }
 
 .cardRoles {
 
     /*margin-left: 16px;*/
-    color: var(--text-color);
     font-weight: normal;
     padding-top: 8px;
 }
