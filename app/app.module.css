@@ -1,6 +1,14 @@
 
 @import './colors.css';
 
+.pageContainer {
+
+    display: flex;
+    background-color: var(--soft-color);
+    justify-content: center;
+    height: 100%;
+}
+
 .main {
 
     margin-top: 20px;
@@ -41,5 +49,5 @@
 
 .softBg {
 
-    background-color: var(--soft-color);
+    background-color: var(--absolute-color);
 }

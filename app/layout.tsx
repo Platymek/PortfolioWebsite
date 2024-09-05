@@ -31,12 +31,12 @@ export default function RootLayout({
 
         <ThemeProvider
 
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
         >
-          <div style={{justifyContent: 'center', display: 'flex'}}>
+          <div className={styles.pageContainer}>
 
             {/* main box */}
             <div className={`${styles.main} ${styles.softBg}`}>

@@ -1,0 +1,16 @@
+
+@import '../colors.css';
+
+.cardsContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+
+    background-color: var(--soft-color);
+    border-radius: 32px;
+
+    padding: 8px;
+    margin-bottom: 32px;
+}

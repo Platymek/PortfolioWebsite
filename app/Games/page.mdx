@@ -1,6 +1,7 @@
 
 import Card from "../components/card-grid/card"
 import CardGrid from "../components/card-grid/card-grid"
+import styles from "./games.module.css"
 
 # My Games
 
@@ -8,12 +9,9 @@ Here is a list of the games I worked on.
 Click on a game to see a more detailed description of what I worked on and a link to where it can be
 accessed!
 
-
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flexDirection: 'column', }}>
-
 ### 2024
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flexDirection: 'row', }}>
+<div className={styles.cardsContainer}>
 
     <Card 
 
@@ -56,8 +54,7 @@ accessed!
 
 ### 2023
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flexDirection: 'row', }}>
-
+<div className={styles.cardsContainer}>
     <Card 
 
         title={'A Shot in the Dark'}
@@ -89,8 +86,7 @@ accessed!
 
 ### 2021
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flexDirection: 'row', }}>
-
+<div className={styles.cardsContainer}>
     <Card 
 
         title={'Grapple Fishing'}
@@ -105,8 +101,7 @@ accessed!
 
 ### 2020
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flexDirection: 'row', }}>
-
+<div className={styles.cardsContainer}>
     <Card 
 
         title={'Quill'}
@@ -124,7 +119,5 @@ accessed!
         text='A metroidvania about kiwis.'
         page='Games/KiwiGame'
     />
-
-</div>
 
 </div>

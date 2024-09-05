@@ -1,10 +1,20 @@
 
 import ArticleGallery from "../../../components/article-gallery/article-gallery";
 import ArticleLayout from "../../../components/article-layout/article-layout";
+import ArticleLinks from "../../../components/article-layout/article-links";
+
+
+# Robots Hate Rain
+
+<ArticleLinks
+
+
+    links={[ 'https://play-mek.itch.io/the-rain' ]}
+    linkNames={[ 'Itch.io (Web, Windows, Android, Linux)' ]}
+/>
+
 
 <ArticleLayout 
-
-    title='Robots Hate Rain'
 
     gallerySrcs={[
 
@@ -14,42 +24,49 @@ import ArticleLayout from "../../../components/article-layout/article-layout";
     ]}
 
     videoid='Pzm71ju0Mn4'
-
-    links={[ 'https://play-mek.itch.io/the-rain' ]}
-    linkNames={[ 'Itch.io (Web, Windows, Android, Linux)' ]}
 >
-    **"The angry cloud hates industrialization. Get as many points as you can..."** I made this game as a warm-up to get back in to games development and to learn 
-    GDScript after finishing my year of university. The theme for the jam was 'The Rain'.
-
-    &nbsp;  
+    **"The angry cloud hates industrialization. Get as many points as you can..."**
+    I made this game as a warm-up to get back in to games development and to learn 
+    GDScript after finishing my year of university.
+    The theme for the jam was 'The Rain'.
 
     The game was made in **Godot** with **GDScript**.
 
     ## Formula
 
-    At this point, I had already solidified my formula for creating and releasing games for game jams which involves the following:
+    At this point, I had already solidified my formula for creating and releasing
+    games for game jams which involves the following:
     
-    - **Limited colours:** I made a shader which changes the colours on screen to any custom colour I want.
-    This is because it's easy to draw with less colours and it always ends up looking unique. it also means that I can add palettes as
+    - **Limited colours:** I made a shader which changes the colours on screen to any
+    custom colour I want.
+    This is because it's easy to draw with less colours and it always ends up looking
+    unique. it also means that I can add palettes as
     unlocks to add easy progression to the game without having to do much extra work.
-    - **Gameplay formula:** I would make an endless arcade game, usually about dodging bullets, and then add 3 different enemy types which served unique purposes.
+
+    - **Gameplay formula:** I would make an endless arcade game, usually about
+    dodging bullets, and then add 3 different enemy types which served unique
+    purposes.
     The game then gets harder as you go along.
-    - **Web export:** Making your game work in web means people will actually play it during a game jam!
+
+    - **Web export:** Making your game work in web means people will actually play
+    it during a game jam!
 
 
     ## Gameplay Overview
 
-    As mentioned, the game is an arcade shmup. You play as an 'angry cloud' and have to get as much score as you can. Giving different weights of score to different actions
-    means that the player has a priority for how they play.
+    As mentioned, the game is an arcade shmup. You play as an 'angry cloud' and have
+    to get as much score as you can.
+    Giving different weights of score to different actions means that the player
+    has a priority for how they play.
     
-    &nbsp;  
-    
-    In this case, their top priority is flower matching, where spawning enemies will be assigned a random flower,
-    and defeating two enemies with the same flower gives health as well as score. The second priority is defeating enemies, which also rewards a fair amount of score
-    and keeps the player more safe from harm. Finally, every second gives the player a small amount of health. Each of these methods of gaining points also grants the
+    In this case, their top priority is flower matching, where spawning enemies will
+    be assigned a random flower,
+    and defeating two enemies with the same flower gives health as well as score.
+    The second priority is defeating enemies, which also rewards a fair amount of
+    score and keeps the player more safe from harm. Finally, every second gives the
+    player a small amount of health.
+    Each of these methods of gaining points also grants the
     player a more tangeable benefit as it always leads them to surviving longer.
-    
-    &nbsp;  
 
     These gave the game a high skill ceiling and there's something
     for all ranges of players to strive for when playing, keeping the game engaging.

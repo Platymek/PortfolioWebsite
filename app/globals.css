@@ -29,13 +29,12 @@ body {
 h1 {
 
   color: var(--primary-color);
-  background-color: var(--absolute-color);
+  background-color: var(--soft-color);
   font-size: 32px;
 
   font-weight: bold;
   text-align: center;
 
-  margin: -8px;
   margin-bottom: 8px;
   margin-top: 16px;
   

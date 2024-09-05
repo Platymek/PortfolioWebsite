@@ -54,9 +54,11 @@
 
 .card {
     
-    background-color: var(--absolute-color);
+    background-color: var(--soft-color);
 
     border-radius: var(--border-radius);
+    border-color: var(--primary-color);
+    box-sizing: border-box;
 
     margin: 8px;
     
