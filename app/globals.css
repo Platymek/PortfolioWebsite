@@ -52,8 +52,8 @@ h1 {
 
 h2 {
 
-  color: var(--primary-color);
-  background-color: var(--absolute-color);
+  color: var(--absolute-color);
+  background-color: var(--primary-color);
   font-size: 24px;
   
   font-weight: bold;
@@ -94,20 +94,26 @@ a {
 p {
 
   font-size: 18px;
+  margin-bottom: 16px;
 }
 
 ul {
   
   padding-left: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
 }
 
 ol {
   
   padding-left: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
 }
 
 ul li {
   
+  padding-top: 8px;
   display: list-item;
   list-style:disc;
   font-size: 18px;
@@ -115,6 +121,7 @@ ul li {
 
 ol li {
   
+  padding-top: 8px;
   display: list-item;
   list-style: decimal;
   font-size: 18px;

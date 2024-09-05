@@ -16,8 +16,13 @@
 
 .textContainer {
 
-    padding-top: 64px;
-    padding-right: 16px;
+    margin-top: 32px;
+    padding: 16px;
+    padding-right: 24px;
     text-wrap: pretty;
     text-align: justify;
+    margin-right: 8px;
+  
+    border-radius: 16px;
+    background-color: var(--absolute-color);
 }

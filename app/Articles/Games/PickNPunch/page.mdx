@@ -1,0 +1,112 @@
+
+import ArticleGallery from "../../../components/article-gallery/article-gallery";
+import ArticleLayout from "../../../components/article-layout/article-layout";
+
+<ArticleLayout 
+
+    title="Pick 'n' Punch"
+
+    gallerySrcs={[
+
+        'https://img.itch.zone/aW1hZ2UvMjkzODQwNy8xNzYwMjQwMS5naWY=/original/XnaB2y.gif',
+        'https://img.itch.zone/aW1hZ2UvMjkzODQwNy8xNzYwMjQwMi5naWY=/original/EQrCeU.gif',
+        'https://img.itch.zone/aW1hZ2UvMjkzODQwNy8xNzYwMjQxNi5naWY=/original/RJ35fF.gif',
+    ]}
+
+    videoid='6gAMeq1qhI8'
+
+    links={[ 'https://play-mek.itch.io/pick-n-punch', "https://github.com/Platymek/ThirdYearProject" ]}
+    linkNames={[ 'Itch.io (Windows, Linux)', "Github Code" ]}
+>
+    My highlights for this project were its **gameplay design**.
+
+    **"A spin on the roguelike genre, where you fight the boss in a boxing match!
+    Each of 5 rounds, you will upgrade the boss to give him one move.
+    Will you pick the right one to end this ultimate challenge?"**
+
+    ## Summary
+    
+    The game is a boxing-themed, action roguelike where the player has to upgrade the boss between each
+    round of the fight. Once the player depleted the boss's health bar, they then have to pick between
+    two attacks to give to the boss which it will use in the following fights until the game ends.
+
+    This means that the main fun of the game is about learning to adapt changing circumstances.
+    The boss that the character must fight is constantly changing and this means the player's strategy
+    must also always change to suit them.
+
+    As the each round passes, the boss becomes more complex and gains more and more health, forcing
+    mastery from the player.
+    They must take new risks and learn their options for each attack.
+
+
+    ## Engaging Gameplay
+
+    I wanted the player to feel **excited** and **determined**.
+    I achieved this by designing the game following these rules:
+
+    - **Challenging**: the player must derive difficulty and hardship from the experience, not being able 
+    to finish the game easily.
+
+    - **Risky**: the player must feel the need to take risks in order to complete the game, especially
+    due to the very relevant fear of permanent death
+
+    - **Fair**: the game must never be unfair or it will cause frustration in the player
+
+    - **Learnable**: it must always be fairly easy to learn what must be done but the answer should
+    never be given to the player as it is fun to learn
+
+
+    ## Main Gameplay Loop
+
+    I made many aspects of the game quite simple in order to keep a focus on the fun of the game.
+    One of the ways I kep the game simple was by giving the player only 3 main resources to manage.
+
+    - **Health**: if either character runs out of this resource, they lose the match.
+    This is a very simple metric for understanding the risk and reward of the game.
+
+    - **Time**: if the player runs out of this resource, they instantly lose.
+    This pressure invokes urgency from the player, causing them to take more risks, which is exciting,
+    especially towards the final rounds.
+    
+    - **Space**: if either character is knocked into one of the walls of the boxing ring by attack
+    knockback, they are inflicted with bonus damage.
+    This resource drives the player's decision making, bringing a question to every action the player
+    performs.
+    The positioning of the player is very important, and they may have to not take the oppurtunity to
+    inflict damage as it may give them a bigger reward later.
+    This resource is also diegetic, meaning it is very tangeable.
+
+    I also gave the player very few attack options. The player can only **walk, dodge, block, and punch**.
+    This means that the player **has very few actions, mapped to even fewer buttons** and are organised
+    in a way which makes sense.
+
+    **Parry:** If the player blocks with the right timing, they can negate all damage and knockback from
+    an attack, as opposed to reducing it. This rewards the player's mastery.
+
+    **Charged punch:** If the player holds the punch button, they can perform a stronger punch with much
+    higher knockback. However, this takes longer and is riskier but gives a far higher reward than the 
+    regular punch.
+
+
+    ## Forms of mastery
+
+    When designing the attacks the boss can perform, different responses from the player allow
+    for mastery.
+    The player may **dodge** an attack for better spacing but must learn when and where they can dodge to.
+    They may **punch** to inflict damage and even charge it for more damage but need to learn when
+    they can do it and even sometimes where they must stand as a charged punch has a longer range.
+    The player may **parry** to stay completely still and stand their ground but must time it perfectly.
+
+    Typically, the player will have to **react** to an attack, seeing when it happens and knowing to react
+    accordingly.
+    However, sometimes the player can **predict** an attack. This is possible as the player knows
+    exactly what attacks the boss has, and know that the conditions of the match affect what
+    attack the boss will perform.
+    
+    Knowing an attack will come up can completely change how the player reacts even to other attacks.
+    For example, the opponent has a move which pushes the player across the ring, but is nearly impossible
+    to react to.
+    If the player predicts this attack will come up next, they may block early or attempt to react and
+    parry the attacks by looking out for it.
+
+</ArticleLayout>

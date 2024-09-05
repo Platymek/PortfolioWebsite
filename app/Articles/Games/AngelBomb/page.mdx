@@ -1,10 +1,20 @@
 
 import ArticleGallery from "../../../components/article-gallery/article-gallery";
 import ArticleLayout from "../../../components/article-layout/article-layout";
+import ArticleLinks from "../../../components/article-layout/article-links";
 
-<ArticleLayout 
 
-    title='Angel Bomb'
+# Angle Bomb
+
+<ArticleLinks
+
+    links={[ 'https://play-mek.itch.io/angel-bomb' ]}
+    linkNames={[ 'Itch.io (Web, Windows)' ]}
+/>
+
+My main highlight of this game is **gameplay design**.
+
+<ArticleLayout
 
     gallerySrcs={[
 
@@ -15,24 +25,15 @@ import ArticleLayout from "../../../components/article-layout/article-layout";
     ]}
 
     videoid='9dKNIbr5Afc'
-
-    links={[ 'https://play-mek.itch.io/angel-bomb' ]}
-    linkNames={[ 'Itch.io (Web, Windows)' ]}
 >
     **"Your health is constantly draining. Thankfully, your volatile nature allows you to take others down with you.
     The more enemies caught in your blast, the more health you recover. Just make sure you take more than one enemy with you!"**.
-
-    &nbsp;  
     
     I made this game for a university game jam, as there was a society I wanted to push, so I felt making something good would show there was interest in it.
-    The theme for the jam was 'Reincarnation/ Rebirth'.
-
-    &nbsp;  
+    The theme for the jam was 'Reincarnation/ Rebirth'. 
 
     The game was made in **Godot 3** with **C#**.
     This was so I could export it to web but still use C#, which is my preferred language for game development.
-
-    &nbsp;  
 
     I even made the music and sound effects myself.
     The sounds effects were made in [ChipTone](https://sfbgames.itch.io/chiptone) and the music in [WarioWare DIY](https://www.mariowiki.com/WarioWare:_D.I.Y.) on the DS through
@@ -51,18 +52,12 @@ import ArticleLayout from "../../../components/article-layout/article-layout";
     Any enemies caught in the explosion are defeated instantly, and the player gains an exponential amount of bonus health based on how many enemies they managed to get 
     caught in the blast.
 
-    &nbsp;  
-
     This means that the player wants to make the msot out of every enemy, trying to allow as many to appear on screen as possible without being hit.
     Then they have to choose when to surround themselves and allow damage.
-    
-    &nbsp;  
     
     Instead of more, fewer enemies appear as the game goes on, which makes it harder for the player to last.
     This, mixed with draining health, creates a constant pressure from the game which has the player constantly on edge.
     When taking damage, the player is temporarily invincible, and their health not draining, which provides a moment of relief.
-    
-    &nbsp;  
 
     There are three enemy types, which are each used to make sure the player is constantly moving: the Knight, bat and witch.
     The Knight creates a large area of damage, which the player must keep out of.

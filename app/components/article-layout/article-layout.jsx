@@ -4,32 +4,9 @@ import styles from './article-layout.module.css'
 
 export default function ArticleLayout(props) {
 
-    function getLinks(links, linkNames) {
-
-        var linkComponents = [];
-
-        for (var i = 0; i < links.length; i++) {
-
-            linkComponents.push(
-                
-                <a href={links[i]} key={`link-${i}`}>
-
-                    {linkNames[i]}
-                </a>
-            );
-
-            linkComponents.push(<br key={`br-${i}`}/>);
-        }
-
-        return linkComponents;
-    }
-
     return (
 
         <div className={styles.container}>
-            
-            <h1>{props.title}</h1>
-            <h3>Platforms:<br/>{getLinks(props.links, props.linkNames)}</h3>
             
             <div className={styles.contentContainer}>
                 

@@ -1,10 +1,20 @@
 
 import ArticleGallery from "../../../components/article-gallery/article-gallery";
 import ArticleLayout from "../../../components/article-layout/article-layout";
+import ArticleLinks from "../../../components/article-layout/article-links";
+
+
+# Bean And The Beanstalk
+
+<ArticleLinks
+
+    links={[ 'https://play-mek.itch.io/beangame' ]}
+    linkNames={[ 'Itch.io (Windows, Linux)' ]}
+/>
+
+Highlights in this game were **gameplay design** and **player experience**.
 
 <ArticleLayout 
-
-    title='Bean And The Beanstalk'
 
     gallerySrcs={[
 
@@ -16,9 +26,6 @@ import ArticleLayout from "../../../components/article-layout/article-layout";
     ]}
 
     videoid='0N0U3SzJydI'
-
-    links={[ 'https://play-mek.itch.io/beangame' ]}
-    linkNames={[ 'Itch.io (Windows, Linux)' ]}
 >
     **"The lifecycle of the Beanstalk, thought to only exist on Stewart Island, requires that the Bean
     build kinetic energy from climbing its parent stalk at high speeds and then using its newfound height
@@ -26,23 +33,18 @@ import ArticleLayout from "../../../components/article-layout/article-layout";
     I made this game with a friend, my first ever group project.
     It went extremely well and was the most fun I had ever had on a project.
 
-    &nbsp;  
-
     My roles in this game were **co-designer**, **visual artist** (including pixel art) and
     **co-programmer**.
     My friend helped with the design, as mentioned later, as well as the programming.
 
-    &nbsp;  
-
     The game was made in C# and was my first project in **Godot 4** (but not Godot in general).
+
 
     ## Teamwork
 
     We decided to try doing a jam together. The jam had a theme, which was voted on beforehand, and then a
     'random object' which has to be incorporated into the game.
     The theme was 'falling' and the random object was 'bean'.
-
-    &nbsp;  
 
     We gave ourselves 30 minutes in isolation to come with every possible idea we could on a Google Docs
     file you can see by
@@ -55,22 +57,16 @@ import ArticleLayout from "../../../components/article-layout/article-layout";
     
     The gameplay loop we went with in the end consists of two stages: the **rising** and **falling stages**.
 
-    &nbsp;  
-
     **Rising:** The player has to climb to the top of the beanstalk by bouncing off leaves.
     There are three leaf types:
     - **Regular leaf:** this gives the player a normal bonus.
     - **Bean leaf:** this gives the player extra points.
     - **Spiky leaf:** this takes points away from the player.
 
-    &nbsp;  
-
     The game also has a **combo system** where they get a point multiplier as they consecutively bounce.
     However, the player loses the multiplier if they take too long to bounce.
     Therefore, the player must balance playing quickly with bouncing on the right leaf types.
     However, if the player misses a leaf and hits the clouds below, they enter the falling stage.
-
-    &nbsp;  
 
     **Falling:** The player must reach the bottom as quickly as they can as their score drains.
     Regular leaves now also take away the player's score but bean leaves still reward the player.
@@ -86,21 +82,15 @@ import ArticleLayout from "../../../components/article-layout/article-layout";
     Birds start flying past and the number of leaves starts to reduce until the player is just barely
     making it.
 
-    &nbsp;  
-
     And then, finally, the player will miss a leaf.
     The player zooms down at extreme speeds in the most exciting part yet, letting go of all the progress
     they just made in a mad
     rush to make the most of it.
-    
-    &nbsp;  
 
     Because there are more leaves higher up than there are below, it becomes both more difficult as the
     player rises up and falls down the stalk.
     Finally, the player hits the bottom where they greeted with a simple *thud* sound.
     They can admire their score with a sigh of relief.
-
-    &nbsp;  
 
     Many comments suggested we add music, but we just felt it would be wrong as the player should be able
     to clearly hear the wind rushing past and the birds flying by.
