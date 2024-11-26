@@ -1,0 +1,68 @@
+import ArticleGallery from "../../../components/article-gallery/article-gallery";
+import ArticleLayout from "../../../components/article-layout/article-layout";
+import ArticleLinks from "../../../components/article-layout/article-links";
+
+import Portfolio2024PNG from "./screenshots/Portfolio2024.png"
+import PortfolioMobilePNG from "./screenshots/mobile.png"
+
+
+# Portfolio (2024)
+
+<ArticleLinks
+
+    links={[ 'https://github.com/Platymek/PortfolioWebsite' ]}
+    linkNames={[ 'Github (Code)' ]}
+/>
+
+<ArticleLayout 
+
+    gallerySrcs={[
+
+        Portfolio2024PNG,
+        PortfolioMobilePNG,
+    ]}
+>
+    To create this website, I used [Next.js](https://nextjs.org),
+    the React-based web development framework.
+    
+    This website is only a frontend, with no backend,
+    and is made in JavaScript and TypeScript with Markdown
+    (*see Implementation details further below*).
+    
+
+    ## Design
+
+    For the design of my Portfolio website,
+    I wanted to give the website a playful design while also keeping the site formal and user friendly.
+
+    To achieve this look, video game interfaces for inspiration such as
+    [Animal Crossing](https://www.gameuidatabase.com/gameData.php?id=606) and
+    [Going Under](https://www.gameuidatabase.com/gameData.php?id=613).
+    Soft colours keep the experience relaxing but are saturated enough to guide the user experience.
+    Corners are rounded, which enhance the website's friendly tone.
+
+    It was important to me to get the website working for both mobile and desktop,
+    and at different text sizes.
+    Once compromise I had to make was putting the gallery of images at the bottom of the page
+    for mobile devices, which some users may find irritating on pages with lots of text,
+    but felt necessary to push that these are articles, and images are secondary.
+    
+
+    ## Implementation
+
+    All the text bodies of each page are made using
+    [Markdown](https://nextjs.org/docs/app/building-your-application/configuring/mdx)
+    as I felt this would not only give the website a consistent look,
+    but it would also be very easy to add new pages whenever I wanted.
+    
+    Of course, there are also many custom components made by me,
+    which can be imported into the markdown .mdx file format like a regular .jsx/ .tsx page.
+    This includes the gallery on the right as well as templates to easily set up pages like this one.
+
+    Generally, I had no trouble creating this website,
+    as Next.js is very easy to use,
+    providing a very useful set of custom components
+    as well as an understandable, automatic routing, file system.
+
+</ArticleLayout>
+

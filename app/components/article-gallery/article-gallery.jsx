@@ -11,12 +11,12 @@ export default function ArticleGallery(props) {
 
         for (var i = 0; i < srcs.length; i++) {
 
-            images.push(<img 
+            images.push(<Image 
             
                 src={srcs[i]}
                 width={1000}
                 height={167}
-                alt={'Gameplay Image'}
+                alt={'Screenshot'}
                 className={`${styles.galleryImage}`}
                 key={`image-${i}`}
             />)

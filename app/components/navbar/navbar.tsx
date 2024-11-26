@@ -57,18 +57,11 @@ export default function NavBar() {
 
                             Games
                         </Link>
-                        {
-                        //<Link href={'/Software'} className={buttonStyle(pathname == '/Software')}>
-//
-                        //    Software
-                        //</Link>
-/*
-                        <Link href={'/Art'} className={buttonStyle(pathname == '/Art')}>
 
-                            Art
+                        <Link href={'/UX'} className={buttonStyle(pathname == '/UX')}>
+
+                            UX
                         </Link>
-*/
-                        }
                     </div>
                 </div>
             </div>

@@ -26,7 +26,7 @@ export default function ArticleLinks(props) {
 
     return (
 
-        <h3 className={styles.articleLinks}>Platforms:<br/>
+        <h3 className={styles.articleLinks}>Links:<br/>
             {getLinks(props.links, props.linkNames)}
         </h3>
     )
