@@ -1,0 +1,86 @@
+import ArticleGallery from "../../../components/article-gallery/article-gallery";
+import ArticleLayout from "../../../components/article-layout/article-layout";
+import ArticleLinks from "../../../components/article-layout/article-links";
+
+import TrainChatbotPNG from "./screenshots/TrainChatbot.png";
+import ChatPNG from "./screenshots/chat.png";
+import HelpPNG from "./screenshots/help.png";
+
+
+# Train Chatbot
+
+<ArticleLinks
+
+    links={[ 'https://github.com/LiamFarese/Train-Chatbot' ]}
+    linkNames={[ 'Github (Code)' ]}
+/>
+
+<ArticleLayout 
+
+    gallerySrcs={[
+
+        TrainChatbotPNG,
+        ChatPNG,
+        HelpPNG,
+    ]}
+>
+    To create this website, I used [React Native](https://reactnative.dev),
+    a version of React that is specialised to work on mobile.
+    However, it was still made to work on desktop, too.
+    
+    The website was created for a University Artificial Intelligence Coursework Project
+    and is for communication with an AI chatbot which recommends the user
+    train tickets based on their requirements.
+    This means the website communicates with a backend made in python using
+    [FastAPI](https://astapi.tiangolo.com).
+
+
+    ## Features
+
+    Usability was very important for this app.
+    The app can be switched between dark mode and light mode with the press of
+    a button, defaulting to the user's system setting.
+
+    The app also features a help page, which:
+    - can be found where in a similar place to other apps, in the top right
+    - welcomes the user and reassures them that the chatbot will ask for missing inputs
+    - gives the user an idea of a starting point, reminding them what to ask for
+    - tells the user of special commands they can input, which are not entirely obvious
+    - says who made the app
+
+
+    ## Design
+
+    The app's interface was kept purposefully minimal to keep a focus on the bot for both
+    the user and the University project.
+
+    The app uses a very simple colour scheme: white, grey and a vibrant blue.
+    The blue was used to highlight important aspects such as buttons and the bot's messages.
+    Making the Help button a vibrant blue is a compromise, making sure the button is
+    visible and visibly separate from the dark mode button but unfortunately perhaps too much
+    attention for users that do not need it.
+
+    The app's interface is inspired by Social Media chats like 
+    [Instagram](https://instagram.com) and
+    [WhatsApp](https://web.whatsapp.com).
+
+
+    ## User Testing
+
+    To ensure the app was usable, I ran usability tests with 3 users.
+
+    The testers were asked 4 questions, which covered a majority of the possible actions
+    an ordinary user would be able to take.
+    This included making the user purposefully type the wrong name in for a station,
+    so that the bot could try to correct them.
+
+    The first user had trouble knowing what to type in,
+    refusing to press the Help button for Help.
+    Therefore, the messages that the bot said had to be updated to try to make the user
+    feel better about pressing the button while also trying to keep them better informed
+    on how to use it without pressing the button.
+
+    Fortunately, the next 2 users had absolutely no trouble with the app at all.
+
+</ArticleLayout>
+
