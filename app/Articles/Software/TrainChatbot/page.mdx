@@ -1,0 +1,95 @@
+import ArticleGallery from "../../../components/article-gallery/article-gallery";
+import ArticleLayout from "../../../components/article-layout/article-layout";
+import ArticleLinks from "../../../components/article-layout/article-links";
+
+import TrainChatbotPNG from "./screenshots/TrainChatbot.png";
+import ChatPNG from "./screenshots/chat.png";
+import HelpPNG from "./screenshots/help.png";
+
+
+# Train Chatbot
+
+### [Github Code](https://github.com/LiamFarese/Train-Chatbot)
+
+<ArticleLayout 
+
+    gallerySrcs={[
+
+        TrainChatbotPNG,
+        ChatPNG,
+        HelpPNG,
+    ]}
+>
+    The website was created for a University Artificial Intelligence Coursework Project
+    and is for communication with an AI chatbot which recommends the user
+    train tickets based on their requirements.
+    This means the website communicates with a backend made in python using
+    [FastAPI](https://astapi.tiangolo.com).
+    This was so the chatbot could be made using Python.
+
+    The app was made in a team of 3.
+    What I worked on is detailed below.
+
+
+    ## Knowledge Base and Delay Predictor
+
+    We were given a database from the University featuring data about different train journeys
+    that took place over the past few years all over the UK.
+    This formed the basis of the knowledge base,
+    as different aspects of this dataset were used in various places.
+
+    For example, a list of the names of all stations was extracted so that 
+    if the user misspells the station name, they can be shown a list of all the stations.
+
+    The data was also used for a **delay predictor**.
+    This shows the user how much delay their train is expected to have.
+    This is because the data could be used to figure out what the delay of each journey was,
+    and the different parameters could be used to predict more.
+
+    I predicted many different machine learning algorithms.
+    In the end, I stuck with a Random Forest Regressor.
+
+
+    ## Chatbot
+
+    ### Conversation
+
+    We considered many different ways to get information from the user which could
+    benefit all types of users.
+    Eventually, we settled with a chatbot which allowed the user to enter all
+    their details in one message,
+    and then asked individually for each missing piece of information.
+
+    When individual information was requested by the bot,
+    the inferring engine would then become more specialised towards understanding what the user
+    wants, as it only needed to look out for one piece of information.
+    
+    This system was chosen as it meant that if the inferring engine was not equipped to understand
+    a particularly way of mentioning a detail,
+    then asking for it individually would make sure the detail is still picked up.
+
+    However, it was still important that the user can type everything in their first message to
+    keep conversation natural and efficient.
+
+
+    ### Implementation
+
+    The chatbot initially used a library called
+    [Experta](https://pypi.org/project/experta/),
+    recommended by the University.
+    This was easy and simple to implement.
+    However, unfortunately, due to other projects,
+    my teammates left this project late,
+    and the chatbot library ended up being incompatible with the backend.
+
+    The chatbot then had to be remade from scratch using no libraries,
+    once again by me,
+    in only 3 days,
+    which was a very difficult challenge,
+    but I managed to pull through and make a chatbot even better than the previous.
+    This is because it allowed for the different modes when the chatbot asked for
+    individual information.
+
+
+</ArticleLayout>
+

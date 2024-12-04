@@ -62,6 +62,11 @@ export default function NavBar() {
 
                             UX
                         </Link>
+
+                        <Link href={'/Software'} className={buttonStyle(pathname == '/Software')}>
+
+                            Software
+                        </Link>
                     </div>
                 </div>
             </div>
